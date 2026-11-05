@@ -1,0 +1,37 @@
+// Auto-generated prebuilt APEX Blueprint for com.android.healthfitness
+// Staged from APEX package: healthfitness (com.android.healthfitness)
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+prebuilt_apex {
+    name: "com.android.healthfitness",
+    apex_name: "com.android.healthfitness",
+    source_apex_name: "com.android.healthfitness",
+    arch: {
+        arm64: {
+            src: "com.android.healthfitness.apex",
+        },
+        x86_64: {
+            src: "com.android.healthfitness.apex",
+        },
+    },
+    filename: "com.android.healthfitness.apex",
+    prefer: true,
+    installable: true,
+}
+
+java_import {
+    name: "framework-healthfitness.stubs.module_lib",
+    jars: ["framework-healthfitness-stubs.jar"],
+    sdk_version: "module_current",
+    visibility: ["//visibility:public"],
+}
+
+java_import {
+    name: "service-healthfitness.stubs.system_server",
+    jars: ["service-healthfitness-stubs.jar"],
+    sdk_version: "system_server_current",
+    visibility: ["//visibility:public"],
+}

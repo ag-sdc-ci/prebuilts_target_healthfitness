@@ -1,0 +1,9 @@
+{
+	"provideLibs": [	
+		    "libdummy_headers_healthfitness-x86_64-v2.so",
+		    "libdummy_headers_healthfitness.so",
+		    "libdummy_healthfitness_dev-x86_64-v2.so",
+		    "libdummy_healthfitness_dev.so"
+	],
+	"visible": true
+}
